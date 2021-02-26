@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2d968264-4e62-4cf3-a271-8409f646c935/resourceGroups/DesWebJS/providers/Microsoft.Web/sites/jsmoda",
+    "appService.deploySubpath": "."
+}
