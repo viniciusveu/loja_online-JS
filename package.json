@@ -4,7 +4,7 @@
     "description": "Trabalho Final da disciplina de Desenvolvimento Web com JS (Loja online)",
     "main": "index.js",
     "scripts": {
-        "build": "node index.js"
+        "start": "node ./index.js"
     },
     "repository": {
         "type": "git",
