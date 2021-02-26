@@ -1,0 +1,251 @@
+<%- include('../partials/nav.ejs') %>
+
+
+
+    <div>
+        <section class="py-5 text-center container">
+            <!-- <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Album example</h1>
+                    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    </p>
+                </div>
+            </div> -->
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <% stockObj.forEach((element, index) => { %>
+                    <% if (element.categoria == filter || filter == null) { %>
+                        <h2>
+                            <%= element.categoria %>
+                        </h2>
+                        <br>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <% element.produtos.forEach((prod, index) => { %>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <img src="<%= prod.img %>"></svg>
+
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>
+                                                    Produto:
+                                                    <%= prod.nome %>
+                                                </li>
+                                                <li>
+                                                    Cor:
+                                                    <%= prod.cor %>
+                                                </li>
+                                                <li>
+                                                    Tamanho:
+                                                    <%= prod.tamanho %>
+                                                </li>
+                                                <li>
+                                                    Descrição:
+                                                    <%= prod.descricoes %>
+                                                </li>
+                                            </ul>
+
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <a href="/add/<%= element.categoria %>/<%= prod.id %>"><button class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                                  </svg></button></a>
+                                                    <a href="/rm/<%= element.categoria %>/<%= prod.id %>"><button class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                                                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                                  </svg></button></a>
+                                                </div>
+
+
+                                                <small class="text-muted">R$ <%= prod.preco %></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% }) %>
+
+                        </div>
+                        <br>
+                        <hr><br>
+                        <% } %>
+                            <% }) %>
+            </div>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger btn-lg" id="button-cart"><svg width="40" height="40" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+
+            <div class="modal fade" id="exampleModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Seu carrinho</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-4 border">
+                                        <h3>Seus produtos:</h3>
+                                        <% let val_total = 0 %>
+
+                                            <% cart.forEach((element, index) => { %>
+                                                <br>
+                                                <div class="card mb-3" style="max-width: 540px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-4">
+                                                            <img src="<%= element.prod.img %>" style="max-width: 80%;"></svg>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">
+                                                                    <%= element.prod.nome %>
+                                                                </h5>
+                                                                <p class="card-text">
+                                                                    <%= element.prod.tamanho %>
+                                                                </p>
+
+
+                                                                <p class="card-text"><small class="text-muted">R$ <%= element.prod.preco %></small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <% val_total = val_total + element.prod.preco %>
+
+                                                    <% }) %>
+                                    </div>
+
+                                    <div class="col-8 border">
+                                        <h3>Seus dados:</h3>
+
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Senha</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress2" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Nome Sobrenome">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Endereço</label>
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Alfineteiros, 4, B. dos Bobos">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">Cidade</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">UF</label>
+                                                <select id="inputState" class="form-select">
+                                                <option selected>Selecione...</option>
+                                                <option>AC</option>
+                                                <option>AL</option>
+                                                <option>AP</option>
+                                                <option>AM</option>
+                                                <option>BA</option>
+                                                <option>CE</option>
+                                                <option>DF</option>
+                                                <option>ES</option>
+                                                <option>GO</option>
+                                                <option>MA</option>
+                                                <option>MT</option>
+                                                <option>MS</option>
+                                                <option>MG</option>
+                                                <option>PA</option>
+                                                <option>PB</option>
+                                                <option>PR</option>
+                                                <option>PE</option>
+                                                <option>PI</option>
+                                                <option>RJ</option>
+                                                <option>RN</option>
+                                                <option>RS</option>
+                                                <option>RO</option>
+                                                <option>RR</option>
+                                                <option>SC</option>
+                                                <option>SP</option>
+                                                <option>SE</option>
+                                                <option>TO</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">CEP</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                  Confirmo que os dados estão sob minha responsabilidade
+                                                </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <br>
+                        <div class="modal-footer">
+                            <h4>Valor total:
+                                <%= val_total.toFixed(2) %>
+                            </h4>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalResultados">Finalizar pedido</button>
+
+                            <div class="modal fade" id="modalResultados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: black;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Confirmação do Pedido</h5>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <p><strong>Produtos: </strong></p>
+                                            <ul>
+                                                <% cart.forEach((element, index) => { %>
+                                                    <li>
+                                                        <%= element.prod.nome %>
+                                                    </li>
+                                                    <% }) %>
+                                            </ul>
+                                            <hr>
+                                            <p><strong>Valor total: <%= val_total.toFixed(2) %></strong></p>
+                                            <p><strong>Endereço: </strong></p>
+                                            <p><strong>Prazo de entrega: <%= Math.floor(Math.random() * (9 - 3) + 3) %></strong></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="/"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver mais produtos</button></a>
+                                            <button type="button" class="btn btn-primary">OK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <%- include('../partials/footer.ejs') %>

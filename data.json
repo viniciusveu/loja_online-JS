@@ -1,0 +1,165 @@
+[{
+        "categoria": "Camisetas",
+        "produtos": [{
+                "id": 0,
+                "nome": "Camiseta Milanoo",
+                "cor": "Preta",
+                "tamanho": "M",
+                "descricoes": "Camiseta preta, M, Milanoo",
+                "preco": 89.99,
+                "img": "https://www-s.mlo.me/upen/v/2018/201806/20180619/20180619154101018147.jpg"
+            },
+            {
+                "id": 1,
+                "nome": "Camisetinha JS Moda",
+                "cor": "Preto com detalhes em rosa",
+                "tamanho": "G",
+                "descricoes": "Camisa preta com detalhes em rosa, G, de manga comprida para adultos",
+                "preco": 59.99,
+                "img": "http://www.plussizecomestilo.com.br/wp-content/uploads/2015/07/Modelos-de-Camisas-Sociais-para-Gordinhas-2.jpg"
+            },
+            {
+                "id": 2,
+                "nome": "Camiseta JS Moda",
+                "cor": "Rosa florido",
+                "tamanho": "GG",
+                "descricoes": "Camiseta rosa com floragens, GG, manga média",
+                "preco": 49.99,
+                "img": "https://i.pinimg.com/474x/d9/a6/a7/d9a6a7a8dbf74a2b53049569727ddbd0.jpg"
+            },
+            {
+                "id": 3,
+                "nome": "Camiseta CHIC",
+                "cor": "Cinza",
+                "tamanho": "G",
+                "descricoes": "Camiseta cinza, G, de manga curta para adultos",
+                "preco": 69.99,
+                "img": "https://olook.com.br/wp-content/uploads/2019/03/O-Look-Moda-Plus-Size-000.jpg"
+            }
+        ]
+    },
+    {
+        "categoria": "Bermudas",
+        "produtos": [{
+                "id": 6,
+                "nome": "Shortinho Academia JS Moda",
+                "cor": "Preto",
+                "tamanho": "P/M/G/GG",
+                "descricoes": "Camiseta azul, G, de manga curta para adultos",
+                "preco": 59.99,
+                "img": "https://www.vkmodaplussize.com.br/product_images/uploaded_images/top-plus-size-print-3.jpg"
+            },
+            {
+                "id": 4,
+                "nome": "Bermuda florida JS Moda",
+                "cor": "Flores",
+                "tamanho": "M/G/GG",
+                "descricoes": "Bermuda florida, tamanho G, JS Moda",
+                "preco": 59.99,
+                "img": "https://www.querotendencias.biz/wp-content/uploads/2014/10/modelos-de-shorts-plus-size-9.jpg"
+            },
+            {
+                "id": 5,
+                "nome": "Jeans JS Moda",
+                "cor": "Azul",
+                "tamanho": "G/GG/XG",
+                "descricoes": "Short Jeans Azul, G, com rascos para coxas avantajadas",
+                "preco": 119.99,
+                "img": "https://i.pinimg.com/originals/49/fb/33/49fb3364c6a923f08042cbf6c28318af.jpg"
+            }
+        ]
+    },
+    {
+        "categoria": "Calças",
+        "produtos": [{
+                "id": 7,
+                "nome": "Jeans JS Moda",
+                "cor": "Azul",
+                "tamanho": "P/M/G/GG",
+                "descricoes": "Calça Jeans azul lisa, vários tamanhos",
+                "preco": 189.99,
+                "img": "https://i.pinimg.com/474x/bd/96/45/bd96450815a299edf491b2fe513936a6.jpg"
+            },
+            {
+                "id": 9,
+                "nome": "Moletom JS Moda",
+                "cor": "Azul",
+                "tamanho": "G/GG",
+                "descricoes": "Caça moletom JS Moda",
+                "preco": 99.99,
+                "img": "https://i1.wp.com/wondersize.blog/wp-content/uploads/2020/12/IMG_7407.jpg?resize=274%2C512&ssl=1"
+            },
+            {
+                "id": 8,
+                "nome": "Jeans Cavalera",
+                "cor": "Preto",
+                "tamanho": "P/M/G",
+                "descricoes": "Jeans preto, Cavalera, ajustado",
+                "preco": 159.99,
+                "img": "https://i.pinimg.com/originals/e4/71/b8/e471b82ba55cc8024445dd45328614b4.jpg"
+            }
+        ]
+    },
+    {
+        "categoria": "Blusas",
+        "produtos": [{
+                "id": 10,
+                "nome": "Jaqueta JS Moda",
+                "cor": "Azul",
+                "tamanho": "P/M/G/XG",
+                "descricoes": "Jaqueta Jeans azul",
+                "preco": 89.99,
+                "img": "https://t-static.dafiti.com.br/3sovTjraflYO8zP-BlzY3C6-mXo=/fit-in/325x471/static.dafiti.com.br/p/zoomp-jaqueta-jeans-zoomp-sury-lisa-azul-8764-2220283-1-zoom.jpg"
+            },
+            {
+                "id": 11,
+                "nome": "Jaqueta JS Moda",
+                "cor": "Preta",
+                "tamanho": "G/GG/XG",
+                "descricoes": "Jaqueta de frio preta",
+                "preco": 199.99,
+                "img": "https://ph-cdn1.ecosweb.com.br/imagens01/foto/plus-size-feminino/jaqueta/jaqueta-puffa-plus-size-preta_308431_600_1.jpg"
+            },
+            {
+                "id": 12,
+                "nome": "Jaqueta de couro JS Moda",
+                "cor": "Preta",
+                "tamanho": "P/M/G",
+                "descricoes": "Camiseta azul, G, de manga curta para adultos",
+                "preco": 259.99,
+                "img": "https://jornaldeboasnoticias.com.br/wp-content/uploads/mmva_20140615_32657001.jpg"
+            }
+        ]
+    },
+    {
+        "categoria": "Íntimo",
+        "produtos": [{
+                "id": 13,
+                "nome": "Lanjerrie JS Moda",
+                "cor": "Preto",
+                "tamanho": "M/G/GG/EX",
+                "descricoes": "Sutiã e calçinha pretos",
+                "preco": 59.99,
+                "img": "https://s2.glbimg.com/XPvlf3kogqc9eODJiwgciNuA6k0=/e.glbimg.com/og/ed/f/original/2019/11/04/audrey-ritchie-lingerie-modelo-plus-size.jpg"
+            },
+            {
+                "id": 14,
+                "nome": "Biquini Mosaico JS Moda",
+                "cor": "Branco - Colorido",
+                "tamanho": "P/G/GG",
+                "descricoes": "Biquini com estampa de mosaico",
+                "preco": 69.99,
+                "img": "https://i.pinimg.com/originals/75/79/39/757939a0cff0f2552d50b525653c9b57.jpg"
+            },
+            {
+                "id": 15,
+                "nome": "Biquini JS Moda",
+                "cor": "Azul, branco e vermelho",
+                "tamanho": "P/M/G/GG",
+                "descricoes": "Biquini estampado e com laços",
+                "preco": 49.99,
+                "img": "https://i.pinimg.com/736x/23/11/06/23110699f34b3348cba86e04dfb15ec6.jpg"
+            }
+        ]
+    }
+]
