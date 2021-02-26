@@ -4,7 +4,6 @@
     "description": "Trabalho Final da disciplina de Desenvolvimento Web com JS (Loja online)",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node index.js"
     },
     "repository": {
