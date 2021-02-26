@@ -1,6 +1,5 @@
 const express = require("express")
 const fs = require('fs')
-const faker = require("faker")
 const path = require('path')
     //const expressLayouts = require("express-ejs-layouts")
 
